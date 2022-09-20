@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,9 +14,11 @@
     </head>
     <body>
         <main
-            class="flex h-screen flex-col bg-pink-300 md:grid md:grid-cols-5 md:grid-rows-6">
-            <header class="bg-blue-300 p-10 md:col-span-4 md:row-span-1">
-                this is my header
+            class="grid h-screen grid-cols-1 bg-pink-300 md:grid md:grid-cols-5 md:grid-rows-6">
+            <header
+                class="col-span-4 grid grid-cols-3 grid-rows-2 bg-indigo-500">
+                <input type="search" class="w-14 h-14" />
+                <h1 class="text">This is my header</h1>
             </header>
 
             <section
@@ -32,9 +34,8 @@
             </section>
 
             <section class="md:col-span-4 md:row-span-5 md:grid md:grid-cols-5">
-                <div class="p-10 gap-2 md:col-span-4 md:grid md:grid-cols-3">
-                    <div class="bg-indigo-700">project</div>
-                    <div class="bg-pink-500">project</div>
+                <div class="gap-2 p-10 md:col-span-4 md:grid md:grid-cols-3">
+                    <div class="card">project</div>
                     <div class="bg-green-500">project</div>
                     <div class="bg-red-500">project</div>
                     <div class="bg-indigo-300">project</div>
